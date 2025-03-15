@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.div-main {
+    height: 300px;
+    width: 300px;
+    background-color: #525252;
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover-div {
+    height: 100%;
+    width: 100%;
+    background-color: #e3e0e0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(100%); 
+    transition: transform 0.3s ease-in-out, opacity 0.1s ease-in;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-main:hover .hover-div {
+    opacity: 1;
+    transform: translateY(0); 
+}

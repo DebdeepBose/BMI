@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../ColorChangerProject/ccc.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+
+      <div class="heading-container">
+        <h1>Click On A Color Below To Change The Background</h1>
+      </div>
+
+      <div class="color-container">
+
+        <div class="red btn" onclick="changeBg('red')">RED</div>
+        <div class="blue btn" onclick="changeBg('blue')">BLUE</div>
+        <div  class="green btn" onclick="changeBg(' rgb(7, 206, 7)')">GREEN</div>
+        <div class="yellow btn" onclick="changeBg('yellow')">YELLOW</div>
+
+      </div>
+      <div class="reset-container">
+        <button class="reset" onclick="changeBg('white')">RESET</button>
+      </div>
+    </div>
+  </body>
+  <script src="ccc.js"></script>
+</html>

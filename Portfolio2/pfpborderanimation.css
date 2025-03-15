@@ -1,0 +1,42 @@
+.circle4border {
+    height: 90%;
+    width: 90%;
+    background: linear-gradient(45deg, rgb(0, 166, 255), cyan, skyblue, deepskyblue,
+                                 white, cyan, skyblue, deepskyblue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotatec4b 3s linear infinite;
+}
+
+.circle4pic {
+    height: 97%;
+    width: 97%;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotatec4p 3s linear infinite; 
+    overflow: hidden; 
+}
+
+@keyframes rotatec4b {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotatec4p {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+

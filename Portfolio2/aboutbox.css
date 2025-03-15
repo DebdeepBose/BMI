@@ -1,0 +1,102 @@
+.about-box {
+    height: 700px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid aqua;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background: rgb(0, 0, 0); 
+    box-shadow: 0px 10px 30px rgba(0, 247, 255, 0.3), 
+                0px 0px 20px rgba(0, 247, 255, 0.6) inset;
+    backdrop-filter: blur(10px);
+}
+
+.about-box::before {
+    content: "";
+    position: absolute;
+    width: 99%;
+    height: 695px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, rgba(0, 247, 255, 0.458), rgba(0, 247, 255, 0.1));
+    box-shadow: 0px 0px 30px rgba(0, 247, 255, 0.8);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+
+.abtheading {
+    width: 100%;
+    height: 60px;
+    color: #00f7ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+}
+  
+  .about-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 3px solid rgb(0, 255, 242);
+    margin-top: 2px;
+  }
+  
+  
+  
+
+.abtcontent {
+    height: 500px;
+    width: 88%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;  
+   
+}
+
+.abt-text {
+        width: 50%;
+        height: 75%;
+        text-align: justify;
+        text-shadow: 0 0 10px rgba(0, 247, 255, 0.6);
+}
+
+.abt-img {
+    height: 375px;
+    width: 375px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px rgb(5, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: flickerShadow 1.5s infinite alternate, slideInFromLeft 1s ease-out, gradientFlow 15s linear infinite;
+}
+
+
+@keyframes flickerShadow {
+    0% {
+        box-shadow: 0 0 20px 10px rgba(5, 255, 255, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 30px 15px rgba(5, 255, 255, 1);
+    }
+    100% {
+        box-shadow: 0 0 20px 10px rgba(5, 255, 255, 0.8);
+    }
+}
+
+.abt-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}

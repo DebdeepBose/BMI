@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+    background-color: black;
+    
+}
+
+.dob, h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #d6ecff;
+    text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff;
+    animation: textGlow 1.5s infinite alternate, textFlicker 3s infinite, textFloat 4s infinite ease-in-out;
+}
+
+
+.card {
+    height: 400px;
+    width: 400px;
+    border-radius: 25px;
+    background-color: black;
+    box-shadow: 0 0 30px 30px #00aaff; 
+    border: none; 
+    color: #d6ecff;
+    font-size: medium;
+    padding-top: 30px;
+    animation: neonGlow 1s infinite alternate;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes neonGlow {
+    0% { box-shadow: 0 0 30px #00aaff; }
+    50% { box-shadow: 0 0 60px #aa00ff; } 
+    100% { box-shadow: 0 0 30px #00ffff; }
+}
+
+@keyframes textGlow {
+    0% { text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff; }
+    50% { text-shadow: 0 0 20px #aa00ff, 0 0 30px #aa00ff; }
+    100% { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
+}
+
+@keyframes textFlicker {
+    0%, 100% { opacity: 1; }
+    10% { opacity: 0.9; }
+    20% { opacity: 1; }
+    30% { opacity: 0.9; }
+    40% { opacity: 1; }
+    50% { opacity: 0.9; }
+    60% { opacity: 1; }
+    70% { opacity: 0.9; }
+    80% { opacity: 1; }
+    90% { opacity: 0.9; }
+}
+

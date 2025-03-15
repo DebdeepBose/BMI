@@ -1,0 +1,113 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 216, 227);
+    height: 325px;
+    width: 800px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 10px 10px 10px rgb(127, 125, 127);
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-container:hover{
+    transform: scale(1.03);
+}
+
+.heading-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    color: rgb(97, 5, 183);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.color-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 250px;
+    width: 100%;
+    gap: 75px;
+    margin-bottom: 40px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px gray;
+    transition: transform 0.3s ease-in-out;
+} 
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: rgb(7, 206, 7);
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.reset-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+}
+
+.reset{
+    height: 90%;
+    width: 15%;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 3px 3px 3px gray;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.reset:hover{
+    transform: scale(1.1);
+}
+
+.reset:active{
+    transform: scale(0.9);
+}

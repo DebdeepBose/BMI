@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+}
+
+.parent {
+  height: 100vh;
+  padding-left: 50px;
+}
+
+.NavBar {
+  height: 90px;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.NavBar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+  padding-right: 40px;
+}
+
+.NavBar li {
+  display: inline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: NavElementLine 1s alternate infinite;
+  position: relative;
+  cursor: pointer;
+}
+
+.NavBar li:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background: currentColor;
+  transition: transform 0.25s ease-out;
+}
+
+.NavBar li:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.myname {
+  margin-right: 800px;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.main-box {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 200px;
+  padding-bottom: 100px;
+}
+
+.dp {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    cyan,
+    rgb(71, 114, 255),
+    rgb(130, 184, 238),
+    rgb(255, 40, 255)
+  );
+  position: relative;
+  animation: rotateAnimation 2s linear infinite;
+}
+
+.dp2 {
+  height: 390px;
+  width: 390px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 389px;
+  width: 389px;
+  border-radius: 50%;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.myinfo {
+  height: 400px;
+  width: 700px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 5px;
+  font-size: x-large;
+}
+
+.aboutbox {
+  width: 90%;
+  margin: 50px auto;
+  margin-left: 40px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(black, black) padding-box,
+              linear-gradient(90deg, cyan, rgb(71, 114, 255), rgb(130, 184, 238), rgb(255, 40, 255)) border-box;
+  border: 2px solid transparent;
+  box-shadow: 0 0 15px rgba(71, 114, 255, 0.7), 0 0 30px rgba(255, 40, 255, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.aboutbox:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(71, 114, 255, 0.9), 0 0 45px rgba(255, 40, 255, 0.7);
+}
+
+.aboutmeimg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutmeimg img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.Aboutmebox {
+  flex: 2;
+  padding: 20px;
+  text-align: center;
+}
+
+.Aboutmebox h2 {
+  font-size: 2rem;
+  background: linear-gradient(to right, cyan, rgb(71, 114, 255), rgb(255, 40, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.Aboutmebox p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.Aboutmebox ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Aboutmebox li {
+  font-size: 1.1rem;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skillbox {
+  height: 480px;
+  width: 90%;
+  margin-left: 40px;
+  border-radius: 20px;
+  padding-top: 20px;
+  border: 2px solid transparent;
+  background: linear-gradient(black, black) padding-box,
+              linear-gradient(90deg, cyan, rgb(71, 114, 255), rgb(130, 184, 238), rgb(255, 40, 255)) border-box;
+  border: 2px solid transparent;
+  box-shadow: 0 0 15px rgba(71, 114, 255, 0.7), 0 0 30px rgba(255, 40, 255, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-top: 200px;
+}
+
+.skillbox:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(71, 114, 255, 0.9), 0 0 45px rgba(255, 40, 255, 0.7);
+}
+
+@keyframes glow-flicker {
+  0% {
+    box-shadow: 0 0 10px rgba(71, 114, 255, 0.6), 0 0 20px rgba(255, 40, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(71, 114, 255, 0.8), 0 0 40px rgba(255, 40, 255, 0.6);
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner .slider {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 30s linear infinite;
+}
+
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(-14deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-14deg) rotateY(360deg);
+  }
+}
+
+.banner .slider .item {
+  position: absolute;
+  inset: 0 0 0 0;
+  height: 200px;
+  resize: both;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(535px);
+}
+
+.banner .slider .item img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+body {
+  background-color: black;
+}
+
+.center-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.9rem;
+  font-weight: bold;
+  background: linear-gradient(to right, cyan, rgb(71, 114, 255), rgb(255, 40, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  animation: moveGradient 2s alternate infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .parent {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .NavBar {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .myname {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .main-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+    padding-bottom: 50px;
+  }
+
+  .dp {
+    height: 300px;
+    width: 300px;
+  }
+
+  .dp2 {
+    height: 290px;
+    width: 290px;
+  }
+
+  img {
+    height: 289px;
+    width: 289px;
+  }
+
+  .myinfo {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    font-size: large;
+  }
+
+  .aboutbox {
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .aboutmeimg {
+    margin-bottom: 20px;
+  }
+
+  .Aboutmebox {
+    padding: 10px;
+  }
+
+  .skillbox {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .banner .slider {
+    width: 150px;
+    height: 200px;
+    left: calc(50% - 75px);
+  }
+
+  .banner .slider .item img {
+    width: 120px;
+    height: 80px;
+  }
+
+  .center-text {
+    font-size: 2rem;
+    top: 20%;
+  }
+}
+

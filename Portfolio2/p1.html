@@ -1,0 +1,283 @@
+<head>
+  <link rel="stylesheet" href="p1.css" />
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="nav-name">Debdeep</li>
+      <li class="nav-elements" onclick="scrollToHome()">Home</li>
+      <li class="nav-elements" onclick="scrollToAbout()">About</li>
+      <li class="nav-elements" onclick="scrollToSkills()">Skills</li>
+      <li class="nav-elements" onclick="scrollToWork()">Projects</li>
+      <li class="nav-elements">Contact</li>
+    </ul>
+  </nav>
+  <div class="main-box">
+    <!-- Info and PFP Starts here -->
+    <div class="pfpinfobox">
+      <div class="info slideinleft">
+        <!-- Slide in from Left -->
+        <h1>HI,</h1>
+        <h1>I'm Debdeep Bose</h1>
+        <h3>
+          I'm Passionate About Software Development<br />
+          And I Like To Build Features From Ground Up
+        </h3>
+        <button class="about-me-btn" onclick="scrollToAbout()">About Me</button>
+      </div>
+      <div class="pfp slideinright">
+        <!-- Slide in from Right -->
+        <div class="circle4border">
+          <div class="circle4pic">
+            <!-- <img src="../public/db.jpeg" alt="ddb"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Info and PFP Ends here -->
+
+    <!--About Section Starts Here-->
+    <div id="about-me" class="about-box slideinleft">
+      <!-- Slide in from Left -->
+      <div class="abtheading">
+        <img src="../public/boutme.png" class="about-icon" />
+        <h1>About Me</h1>
+      </div>
+      <div class="abtcontent">
+        <div class="abt-img slideinleft">
+          <!-- Slide in from Left -->
+          <img src="../public/dimg.jpg" />
+        </div>
+        <div class="abt-text slideinright">
+          <!-- Slide in from Right -->
+          <h2>Hi There, I'm Debdeep</h2>
+          <h3>
+            I'm a passionate software developer from West Bengal. I love turning
+            ideas into reality through code, whether it's building applications,
+            solving complex problems, or diving deep into Data Structures and
+            Algorithms. Coding isn't just a skill for me, it's a way to
+            challenge myself, think critically, and continuously learn. I thrive
+            on problem-solving and enjoy tackling DSA challenges that push my
+            logical thinking to new heights. Always eager to explore new
+            technologies and refine my craft, I'm on a mission to create
+            efficient, scalable, and impactful software solutions.
+          </h3>
+
+          <!-- Modified Button with Download Icon -->
+          <button class="cv-btn">
+            <span class="button__text">Get Resume</span>
+            <span class="button__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 35 35"
+                class="svg"
+              >
+                <path
+                  d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"
+                ></path>
+                <path
+                  d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"
+                ></path>
+                <path
+                  d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"
+                ></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--About Section Ends Here-->
+
+    <div id="scroll-skill"></div>
+    <div id="my-skill" class="skillbox slideinright">
+      <div class="skilllogo">
+        <div class="banner">
+          <div class="center-text"> MY SKILLS</div>
+          <div class="slider" style="--quantity: 17">
+            <div class="item" style="--position: 1">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                alt="C++ Logo"
+              />
+            </div>
+            <div class="item" style="--position: 2">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java Logo"
+              />
+            </div>
+            <div id="htmlog" class="item" style="--position: 3">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML Logo"
+              />
+            </div>
+            <div class="item" style="--position: 4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS Logo"
+              />
+            </div>
+            <div class="item" style="--position: 5">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JS Logo"
+              />
+            </div>
+            <div class="item" style="--position: 6">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL Logo">
+            </div>
+            <div class="item" style="--position: 7">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo">
+            </div>
+            <div class="item" style="--position: 8">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Logo">
+            </div>
+            <div class="item" style="--position: 9">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Logo">
+            </div>
+            <div class="item" style="--position: 10">
+              <img src="../public/github.png" alt="GitHub Logo">
+            </div>
+            <div class="item" style="--position: 11">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery Logo">
+            </div>
+            <div class="item" style="--position: 12">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo">
+            </div>
+            <div class="item" style="--position: 13">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS Logo">
+            </div>
+            <div class="item" style="--position: 14">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo">
+            </div>
+            <div class="item" style="--position: 15">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js Wordmark Logo">
+            </div>
+            <div class="item" style="--position: 16">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js Logo">
+            </div>
+            <div class="item" style="--position: 17; margin-top: 3px;">
+              <i class="devicon-swiper-original colored" style="font-size: 65px;" ></i>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="workbox slideinleft">
+      <div class="work-heading">
+        <img src="../public/boutme.png" class="about-icon" />
+        <h1>My Projects</h1>
+      </div>
+    
+      <div class="fbwrapper" id="flip-box1">
+
+        <div class="b">
+          <button class="re-btn" id="viewBtn">Code</button>
+          <button class="view-code-btn">View</button>
+        </div>
+        
+
+
+        <div class="f">
+          <div class="f-card-view">
+            <button class="flip-btn" onclick="flip_it('flip-box1')">Project Overview</button>
+            <img src="../ColorChangerProject/Project_Overview.png">
+            <button class="hidden-btn" onclick="window.location.href='https://debdeepbose.github.io/Burst-Pop/'">Hidden</button>
+            <button class="hidden-btn2">Hidden2</button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="fbwrapper" id="flip-box2">
+        
+        <div class="b">
+          <button class="re-btn" id="viewBtn">Code</button>
+          <button class="view-code-btn">View</button>
+        </div>
+        <div class="f">
+          <div class="f-card-view">
+            <button class="flip-btn" onclick="flip_it('flip-box2')">Project Overview</button>
+            <img src="../BMIProject/Front_View.png">
+            <button class="hidden-btn" onclick="window.location.href='https://debdeepbose.github.io/Burst-Pop/'">Hidden</button>
+            <button class="hidden-btn2">Hidden2</button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="fbwrapper" id="flip-box3">
+        <div class="b">
+          <img src="/FrontEndDev/BubbleGame/BG_Overview.png">
+          <button class="re-btn" id="viewBtn">Code</button>
+          <button class="view-code-btn">Try</button>
+        </div>
+        <div class="f">
+          <div class="f-card-view">
+            <button class="flip-btn" onclick="flip_it('flip-box3')">Project Overview</button>
+            <img src="/FrontEndDev/BubbleGame/BG_Overview.png">
+            <button class="hidden-btn" onclick="window.location.href='https://debdeepbose.github.io/Burst-Pop/'">Hidden</button>
+            <button class="hidden-btn2">Hidden2</button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="fbwrapper" id="flip-box4">
+        <div class="b">
+          <img src="../CalculatorProject/Back_Overview.png">
+          <button class="re-btn" id="viewBtn">Code</button>
+          <button class="view-code-btn">Try</button>
+        </div>
+        <div class="f">
+          <div class="f-card-view">
+            <button class="flip-btn" onclick="flip_it('flip-box4')">Project Overview</button>
+            <img src="../CalculatorProject/Front_Overview.png">
+            <button class="hidden-btn" onclick="window.location.href='https://debdeepbose.github.io/Calculator/'">Hidden</button>
+            <button class="hidden-btn2">Hidden2</button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="fbwrapper" id="flip-box5">
+        <div class="b">
+          <button class="re-btn" id="viewBtn">Code</button>
+          <button class="view-code-btn">View</button>
+        </div>
+        <div class="f">
+          <div class="f-card-view">
+            <button class="flip-btn" onclick="flip_it('flip-box5')">Project Overview</button>
+            <img src="" alt="Will Update">
+            <button class="hidden-btn" onclick="window.location.href='https://debdeepbose.github.io/Burst-Pop/'">Hidden</button>
+            <button class="hidden-btn2">Hidden2</button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="fbwrapper" id="flip-box6">
+        <div class="b">
+          <button class="re-btn" id="viewBtn">Code</button>
+          <button class="view-code-btn">View</button>
+        </div>
+        <div class="f">
+          <div class="f-card-view">
+            <button class="flip-btn" onclick="flip_it('flip-box6')">Project Overview</button>
+            <img src="" alt="Will Update">
+            <button class="hidden-btn" onclick="window.location.href='https://debdeepbose.github.io/Burst-Pop/'">Hidden</button>
+            <button class="hidden-btn2">Hidden2</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+
+    <div class="contactbox">
+      
+    </div>
+  </div>
+</body>
+<script src="pjs.js"></script>

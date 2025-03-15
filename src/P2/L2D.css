@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .light-mode {
+    background: white;
+    color: black;
+  }
+  
+  .dark-mode {
+    background: black;
+    color: white;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .light-mode button {
+    background: black;
+    color: white;
+  }
+  
+  .dark-mode button {
+    background: white;
+    color: black;
+  }
+  

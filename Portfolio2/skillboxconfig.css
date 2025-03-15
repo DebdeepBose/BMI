@@ -1,0 +1,101 @@
+.skillbox {
+  height: 400px;
+  width: 90%;
+  border-radius: 25px;
+  padding-top: 20px;
+  border: 2px solid aqua;
+  margin-top: 200px;
+  background: rgb(0, 0, 0);
+  box-shadow: 0px 10px 30px rgba(0, 247, 255, 0.3),
+    0px 0px 20px rgba(0, 247, 255, 0.6) inset;
+  backdrop-filter: blur(10px);
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skillbox::before {
+  content: "";
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  border-radius: 25px;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 247, 255, 0.458),
+    rgba(0, 247, 255, 0.1)
+  );
+  box-shadow: 0px 0px 30px rgba(0, 247, 255, 0.8);
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner .slider {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 25s linear infinite;
+}
+
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(-14deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-14deg) rotateY(360deg);
+  }
+}
+
+.banner .slider .item {
+  position: absolute;
+  inset: 0 0 0 0;
+  height: 200px;
+  resize: both;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(500px);
+}
+
+.banner .slider .item img {
+  width: 130px;
+  height: 75px;
+  object-fit: contain;
+  border-radius: 20px;
+}  
+
+.center-text {
+  position: absolute;
+  top: 21%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.9rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, white, cyan);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  animation: moveGradient 2s alternate infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+

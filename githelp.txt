@@ -1,0 +1,8 @@
+cd 
+git init
+git remote add origin https://github.com/DebdeepBose/Calculator.git
+git add .
+git commit -m "Initial Commit"
+git branch
+git branch -m master main
+git push -u origin main

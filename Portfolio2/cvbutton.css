@@ -1,0 +1,65 @@
+.cv-btn {
+    position: relative;
+    width: 180px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid cyan;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    transition: all 0.1s ease-in-out;
+    user-select: none;
+    margin-top: 50px;
+    text-shadow: 0 0 2px white, 0 0 5px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 5px rgb(0, 166, 255), 0 0 15px rgba(0, 166, 255, 0.5), 0 0 25px rgba(0, 166, 255, 0.3);
+}
+
+.cv-btn .button__text {
+    position: relative;
+    z-index: 2;
+    transition: opacity 0.3s ease-in-out;
+    margin-right: 40px;
+}
+
+.cv-btn .button__icon {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 45px;
+    background: linear-gradient(90deg, rgb(0, 166, 255), rgb(0, 140, 255));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease-in-out;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.cv-btn .svg {
+    width: 20px;
+    fill: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.cv-btn:hover .button__text {
+    opacity: 0;
+}
+
+.cv-btn:hover .button__icon {
+    width: 100%;
+}
+
+.cv-btn:active {
+    transform: scale(0.75);
+    box-shadow: 0 0 5px rgb(0, 166, 255), 0 0 15px rgba(0, 166, 255, 0.8);
+}
+
+.cv-btn:active .button__icon {
+    background: linear-gradient(90deg, rgb(0, 120, 255), rgb(0, 100, 255));
+}
