@@ -166,6 +166,7 @@
     margin-bottom: 60px;
     border: 2px solid aqua;
     opacity: 0.8;
+    box-shadow: 0px 0px 15px aqua /* Equal shadow on all sides */
 }
 
 .f-card-view button {
@@ -234,6 +235,7 @@
 .view-code-btn{
   margin-left: 150px;
 }
+
 
 .hidden-btn{
   opacity: 0;

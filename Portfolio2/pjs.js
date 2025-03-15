@@ -13,6 +13,10 @@ function scrollToSkills() {
   document.getElementById("scroll-skill").scrollIntoView({ behavior: "smooth" });
 }
 
+function scrollToWork() {
+  document.getElementById("scroll-work").scrollIntoView({ behavior: "smooth" });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const observerOptions = {
     root: null,
