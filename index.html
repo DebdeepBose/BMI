@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../BMIProject/bmi.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <header>
+    <h1>BMI Calculator</h1>
+  </header>
+  <body>
+    <div class="main-container">
+      <div class="flipped" id="flippedCard">
+        <div class="frontBMIface">
+          <button class="launch" id="calculateBMI">Calculate BMI</button>
+        </div>
+        <div class="backBMIface">
+          <input id="height" type="text" placeholder="Enter Height In Meters" />
+          <input id="weight" type="text" placeholder="Enter Weight In KiloGrams"/>
+          <button class="bmicalc">Calculate</button>
+          <input id="bmiOutput" type="text" readonly placeholder="Your BMI">
+        </div>
+      </div>
+    </div>
+    <script src="bmi.js"></script>
+  </body>
+</html>
