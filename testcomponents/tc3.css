@@ -1,0 +1,37 @@
+*{margin: 0; padding: 0;box-sizing: border-box;}
+body{height: 100%; width: 100%;background-color:black;display: flex;align-items: center;justify-content: center;}
+
+.oni{
+    height: 75px;
+    width: 75px;
+    background: transparent;
+    border-radius: 25px;
+    display: flex;align-items: center;justify-content: center;
+    transition: all 0.3s ease-in-out;
+    animation: movin 1.7s infinite linear;
+}
+
+.change{
+    display: flex;align-items: center;justify-content: center;
+    height: 45px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: black;
+    color: aliceblue;font-size: medium;font-weight: 600;
+}
+
+.square{
+    height: 400px;
+    width: 400px;
+    border-radius: 25px;
+    transform: rotateZ(180deg);
+}
+
+@keyframes movin{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateZ(360deg);
+    }
+}
+
