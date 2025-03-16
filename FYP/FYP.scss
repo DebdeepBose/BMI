@@ -1,10 +1,13 @@
-@import 'Landing';
-@import 'Landing2';
+@use 'Landing';
+@use 'Landing2';
+@use 'Landing3';
+
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Inter;
 }
 body {
   min-height: 100vh;

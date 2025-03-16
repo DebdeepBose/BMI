@@ -22,14 +22,15 @@ $lcblue: #4765f8;
 
     .big-text {
       width: 675px;
-      height: 232px;
+      height: 234px;
       display: flex;
       align-items: center;
       justify-content: flex-start;
       flex-direction: column;
+      padding-right: 20px;
 
       h1 {
-        font-size: 64px;
+        font-size: 60px;
         font-style: normal;
         font-weight: 600;
 
@@ -42,6 +43,7 @@ $lcblue: #4765f8;
     .small-text {
       width: 675px;
       height: 24px;
+      padding-left: 10px;
 
       p {
         font-size: 16px;
@@ -58,6 +60,7 @@ $lcblue: #4765f8;
       display: flex;
       justify-content: flex-start;
       align-items: end;
+      padding-left: 10px;
 
       .land-register {
         display: flex;
