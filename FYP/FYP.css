@@ -146,7 +146,52 @@
   padding: 64px 144px;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
+  background-color: #F5F7FA;
+}
+.motiv .motiv-text {
+  width: 540px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.motiv .motiv-text .motiv-big-text {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+}
+.motiv .motiv-text .motiv-big-text .mbt-blue {
+  color: #4765f8;
+}
+.motiv .motiv-text .motiv-small-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.motiv .motiv-num {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+  column-gap: 40px;
+}
+.motiv .motiv-num .num1, .motiv .motiv-num .num2, .motiv .motiv-num .num3, .motiv .motiv-num .num4 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+}
+.motiv .motiv-num .num-division .up {
+  font-weight: 700;
+  height: 36px;
+  font-size: 28px;
+}
+.motiv .motiv-num .num-division .down {
+  color: #717171;
 }
 
 * {
