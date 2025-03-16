@@ -1,12 +1,73 @@
 .landing-element-holder {
   width: 100%;
   height: 600px;
-  border: 2px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   padding: 144px 96px;
+  gap: 150px;
+  background-color: #FBF8F8;
+}
+.landing-element-holder .landing-text-holder {
+  width: 675px;
+  height: 407px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
+}
+.landing-element-holder .landing-text-holder .big-text {
+  width: 675px;
+  height: 232px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.landing-element-holder .landing-text-holder .big-text h1 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+}
+.landing-element-holder .landing-text-holder .big-text h1 .fh1span, .landing-element-holder .landing-text-holder .big-text h1 .sh1span {
+  color: #4765f8;
+}
+.landing-element-holder .landing-text-holder .small-text {
+  width: 675px;
+  height: 24px;
+}
+.landing-element-holder .landing-text-holder .small-text p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #717171;
+}
+.landing-element-holder .landing-text-holder .landing-btn-holder {
+  width: 675px;
+  height: 51px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+}
+.landing-element-holder .landing-text-holder .landing-btn-holder .land-register {
+  display: flex;
+  padding: 14px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #4765f8;
+  color: white;
+  outline: none;
+  border: none;
+}
+.landing-element-holder .landing-img-holder {
+  width: 391px;
+  height: 407px;
+  object-fit: cover;
 }
 
 * {
@@ -29,6 +90,7 @@ nav {
   flex-shrink: 0.5;
   flex-direction: row;
   padding: 10px;
+  background-color: #FBF8F8;
 }
 nav .nav-ul {
   display: flex;

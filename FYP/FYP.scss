@@ -1,4 +1,5 @@
 @import 'Landing';
+@import 'Landing2';
 
 * {
   box-sizing: border-box;
@@ -21,6 +22,7 @@ nav {
   flex-shrink: 0.5;
   flex-direction: row;
   padding: 10px;
+  background-color: #FBF8F8;;
 
   .nav-ul {
     display: flex;
