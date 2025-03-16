@@ -6,6 +6,7 @@
 @import url('skillboxconfig.css');
 @import url('contbox.css');
 @import url('workbox.css');
+@import url('contactbox.css');
 
 * {
   box-sizing: border-box;
@@ -41,8 +42,17 @@ ul {
 .nav-name {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
-  margin-right: 800px;
+  margin-right: 810px;
   font-size: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-name:hover{
+  transform: scale(1.1);
+}
+
+.nav-name:active{
+  transform: scale(0.9);
 }
 
 .nav-elements {
@@ -51,6 +61,7 @@ ul {
   position: relative;
   cursor: pointer;
   padding-bottom: 2px;
+  transition: transform 0.2s ease-in-out;
 }
 
 .nav-elements::before {
@@ -66,6 +77,15 @@ ul {
   transition: transform 0.25s ease-out;
 }
 
+.nav-elements:hover{
+  color: rgb(64, 207, 255);
+  transform: scale(1.05);
+}
+
+.nav-elements:active{
+  transform: scale(0.9);
+}
+
 .nav-elements:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -78,10 +98,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  background-color: black;
 }
 
 .main-box {
-  height: 3200px;
+  height: 3750px;
   width: 100%;
   background-color: rgb(0, 0, 0);
   display: flex;
@@ -135,3 +157,36 @@ body {
 
 
 
+.sup2dwn {
+  opacity: 0;  /* Initially hidden */
+  transform: translateY(-50px);  /* Start position (above) */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+.sup2dwn.active {
+  opacity: 1;
+  transform: translateY(0); 
+}
+
+
+::-webkit-scrollbar {
+  width: 5px; 
+  height: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: cyan;
+  border-radius: 20px; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 200, 200); 
+}

@@ -1,0 +1,176 @@
+.contactbox {
+    height: 600px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid aqua;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background: rgb(0, 0, 0); 
+    box-shadow: 0px 10px 30px rgba(0, 247, 255, 0.3), 
+                0px 0px 20px rgba(0, 247, 255, 0.6) inset;
+    backdrop-filter: blur(10px);
+    margin-top: 150px;
+}
+
+.contactbox::before {
+    content: "";
+    position: absolute;
+    width: 99%;
+    height: 695px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, rgba(0, 247, 255, 0.458), rgba(0, 247, 255, 0.1));
+    box-shadow: 0px 0px 30px rgba(0, 247, 255, 0.8);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.contact-heading{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, white, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: xx-large;
+    font-weight: bold;
+    background-size: 200% 100%;
+    animation: moveGradient 1s alternate infinite;
+    padding-top: 40px;
+}
+
+.contact-info{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+.input-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: all 0.3s ease-in-out;
+}
+.input-container img{
+    width: 9%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.name, .email, .msg{
+    width: 90%;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid cyan;
+    outline: none;
+    font-size: larger;
+    padding: 0px 25px;
+    background-color: black;
+    color: cyan;
+    font-weight: 550;
+    transition: all 0.3s ease-in-out;
+}
+
+.msg:hover, .email:hover, .name:hover{
+    transform: scale(1.03);
+}
+
+.input-container:hover img {
+    transform: translateX(-10px);
+}
+
+.msg:focus, .email:focus, .name:focus{
+    width: 93%;
+    height: 60px;
+    box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan; 
+}
+
+::placeholder{
+    color: cyan;
+    opacity: 0.5;
+}
+
+
+.shoot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    width: 150px;
+    height: 50px;
+}
+
+.shoot {
+    font-family: inherit;
+    font-size: 20px;
+    background: rgb(0, 0, 0);
+    color: cyan;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: 2px solid cyan;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  .shoot:hover{
+    box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan; 
+  }
+
+  .shoot span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .shoot svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .shoot:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+    
+  }
+  
+ .shoot:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  .shoot:hover span {
+    transform: translateX(5em);
+  }
+  
+ .shoot:active {
+    transform: scale(0.9);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+
+  
+  

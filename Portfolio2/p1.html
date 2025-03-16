@@ -11,7 +11,7 @@
       <li class="nav-elements" onclick="scrollToAbout()">About</li>
       <li class="nav-elements" onclick="scrollToSkills()">Skills</li>
       <li class="nav-elements" onclick="scrollToWork()">Projects</li>
-      <li class="nav-elements">Contact</li>
+      <li class="nav-elements" onclick="scrollToContact()"> Contact</li>
     </ul>
   </nav>
   <div class="main-box">
@@ -42,11 +42,11 @@
     <div id="about-me" class="about-box slideinleft">
       <!-- Slide in from Left -->
       <div class="abtheading">
-        <img src="../public/boutme.png" class="about-icon" />
+        <img src="../public/boutme.png" class="about-icon " />
         <h1>About Me</h1>
       </div>
       <div class="abtcontent">
-        <div class="abt-img slideinleft">
+        <div class="abt-img sup2dwn ">
           <!-- Slide in from Left -->
           <img src="../public/dimg.jpg" />
         </div>
@@ -177,7 +177,7 @@
         <h1>My Projects</h1>
       </div>
     
-      <div class="fbwrapper" id="flip-box1">
+      <div class="fbwrapper sup2dwn" id="flip-box1">
 
         <div class="b">
           <img src="/my-app/ColorChangerProject/Project_Overview.png">
@@ -197,7 +197,7 @@
         </div>
       </div>
     
-      <div class="fbwrapper" id="flip-box2">
+      <div class="fbwrapper sup2dwn" id="flip-box2">
         
         <div class="b">
           <img src="BMIpic.png">
@@ -214,7 +214,7 @@
         </div>
       </div>
     
-      <div class="fbwrapper" id="flip-box3">
+      <div class="fbwrapper sup2dwn" id="flip-box3">
         <div class="b">
           <img src="/FrontEndDev/BubbleGame/BG_Overview.png">
           <button class="re-btn" id="viewBtn">Code</button>
@@ -230,7 +230,7 @@
         </div>
       </div>
     
-      <div class="fbwrapper" id="flip-box4">
+      <div class="fbwrapper sup2dwn" id="flip-box4">
         <div class="b">
           <img src="../CalculatorProject/Back_Overview.png">
           <button class="re-btn" id="viewBtn">Code</button>
@@ -246,7 +246,7 @@
         </div>
       </div>
     
-      <div class="fbwrapper" id="flip-box5">
+      <div class="fbwrapper sup2dwn" id="flip-box5">
         <div class="b">
           <button class="re-btn" id="viewBtn">Code</button>
           <button class="view-code-btn">View</button>
@@ -261,7 +261,7 @@
         </div>
       </div>
     
-      <div class="fbwrapper" id="flip-box6">
+      <div class="fbwrapper sup2dwn" id="flip-box6">
         <div class="b">
           <button class="re-btn" id="viewBtn">Code</button>
           <button class="view-code-btn">View</button>
@@ -279,8 +279,44 @@
     
   
 
-    <div class="contactbox">
+    <div id="scroll-contact"></div>
+    <div class="contactbox slideinleft">
+      <div class="contact-heading">Let's Get In Touch!</div>
+      <div class="contact-info">
+        <div class="input-container slideinleft">
+          <img src="name_icon.svg" alt="User Icon">
+          <input type="text" class="name" placeholder="Enter Your Name">
+      </div>
       
+      <div class="input-container slideinleft">
+          <img src="mail_icon.svg" alt="Email Icon">
+          <input type="text" class="email" placeholder="Enter Your Email Address">
+      </div>
+      
+      <div class="input-container slideinleft">
+          <img src="msg_icon.svg" alt="Message Icon" class="lol">
+          <input type="text" class="msg" placeholder="Enter Your Message">
+      </div>
+      
+        <button class="shoot">
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  fill="currentColor"
+                  d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <span>Send</span>
+        </button>
     </div>
   </div>
 </body>
