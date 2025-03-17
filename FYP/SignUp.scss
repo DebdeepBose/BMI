@@ -14,7 +14,7 @@ $lcblue: #4765f8;
 
   .sp-box {
     width: 537px;
-    height: 604px;
+    height: 682px;
     border-radius: 26px;
     border: 1px solid #d6d6d6;
     background: #fff;
@@ -44,13 +44,35 @@ $lcblue: #4765f8;
       }
     }
 
-    .sp-mail-entry-box {
-      margin-top: 50px;
+    .sp-username-entry-box {
+      margin-top: 25px;
       display: flex;
       align-items: center;
       justify-content: center;
       width: 454px;
-      height: 66px;
+      height: 56px;
+      border: 1px solid #eaeaea;
+      background: #fff;
+      box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.2);
+      border-radius: 10px;
+
+      .sp-username-entry {
+        width: 100%;
+        height: 100%;
+        padding: 23px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+      }
+    }
+
+    .sp-mail-entry-box {
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 454px;
+      height: 56px;
       border: 1px solid #eaeaea;
       background: #fff;
       box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.2);
@@ -66,19 +88,19 @@ $lcblue: #4765f8;
       }
     }
 
-    .pass-entry-box {
+    .sp-pass-entry-box {
       margin-top: 25px;
       display: flex;
       align-items: center;
       justify-content: center;
       width: 454px;
-      height: 66px;
+      height: 56px;
       border: 1px solid #eaeaea;
       background: #fff;
       box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.2);
       border-radius: 10px;
 
-      .pass-entry {
+      .sp-pass-entry {
         width: 100%;
         height: 100%;
         padding: 23px;
@@ -88,22 +110,59 @@ $lcblue: #4765f8;
       }
     }
 
-    .forgot-pass-box {
+    .sp-confirm-pass-entry-box {
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 454px;
+      height: 56px;
+      border: 1px solid #eaeaea;
+      background: #fff;
+      box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.2);
+      border-radius: 10px;
+
+      .sp-confirm-pass-entry {
+        width: 100%;
+        height: 100%;
+        padding: 23px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+      }
+    }
+
+    .sp-tnc-box {
       margin-top: 25px;
       width: 450px;
       color: #333;
       font-family: "Plus Jakarta Sans";
       font-size: 15px;
       font-weight: 400;
-      
+
+      .custom-checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 5px;
+        padding-left: 2px;
+      }
+
+      .check {
+        width: 21px;
+        height: 21px;
+        border-radius: 5px;
+        border: 1px solid #d6d6d6;
+      }
     }
 
-    .continue-box {
-      margin-top: 50px;
+    .sp-continue-box {
+      margin-top: 25px;
       width: 454px;
-      height: 66px;
+      height: 56px;
 
-      .con-btn {
+      .sp-con-btn {
         width: 99%;
         height: 100%;
         background-color: $lcblue;
@@ -115,8 +174,8 @@ $lcblue: #4765f8;
       }
     }
 
-    .nu-reg-box {
-      margin-top: 50px;
+    .sp-nu-reg-box {
+      margin-top: 25px;
       height: 19px;
       width: 454px;
       color: #333;

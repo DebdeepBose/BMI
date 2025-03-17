@@ -606,7 +606,7 @@
 }
 .sp-body .sp-box {
   width: 537px;
-  height: 604px;
+  height: 682px;
   border-radius: 26px;
   border: 1px solid #d6d6d6;
   background: #fff;
@@ -634,13 +634,33 @@
   font-size: 35px;
   font-weight: 600;
 }
-.sp-body .sp-box .sp-mail-entry-box {
-  margin-top: 50px;
+.sp-body .sp-box .sp-username-entry-box {
+  margin-top: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 454px;
-  height: 66px;
+  height: 56px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.2);
+  border-radius: 10px;
+}
+.sp-body .sp-box .sp-username-entry-box .sp-username-entry {
+  width: 100%;
+  height: 100%;
+  padding: 23px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.sp-body .sp-box .sp-mail-entry-box {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 454px;
+  height: 56px;
   border: 1px solid #eaeaea;
   background: #fff;
   box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.2);
@@ -654,19 +674,19 @@
   border: none;
   outline: none;
 }
-.sp-body .sp-box .pass-entry-box {
+.sp-body .sp-box .sp-pass-entry-box {
   margin-top: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 454px;
-  height: 66px;
+  height: 56px;
   border: 1px solid #eaeaea;
   background: #fff;
   box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.2);
   border-radius: 10px;
 }
-.sp-body .sp-box .pass-entry-box .pass-entry {
+.sp-body .sp-box .sp-pass-entry-box .sp-pass-entry {
   width: 100%;
   height: 100%;
   padding: 23px;
@@ -674,7 +694,27 @@
   border: none;
   outline: none;
 }
-.sp-body .sp-box .forgot-pass-box {
+.sp-body .sp-box .sp-confirm-pass-entry-box {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 454px;
+  height: 56px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.2);
+  border-radius: 10px;
+}
+.sp-body .sp-box .sp-confirm-pass-entry-box .sp-confirm-pass-entry {
+  width: 100%;
+  height: 100%;
+  padding: 23px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.sp-body .sp-box .sp-tnc-box {
   margin-top: 25px;
   width: 450px;
   color: #333;
@@ -682,12 +722,26 @@
   font-size: 15px;
   font-weight: 400;
 }
-.sp-body .sp-box .continue-box {
-  margin-top: 50px;
-  width: 454px;
-  height: 66px;
+.sp-body .sp-box .sp-tnc-box .custom-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 5px;
+  padding-left: 2px;
 }
-.sp-body .sp-box .continue-box .con-btn {
+.sp-body .sp-box .sp-tnc-box .check {
+  width: 21px;
+  height: 21px;
+  border-radius: 5px;
+  border: 1px solid #d6d6d6;
+}
+.sp-body .sp-box .sp-continue-box {
+  margin-top: 25px;
+  width: 454px;
+  height: 56px;
+}
+.sp-body .sp-box .sp-continue-box .sp-con-btn {
   width: 99%;
   height: 100%;
   background-color: #4765f8;
@@ -697,8 +751,8 @@
   border-radius: 10px;
   border: 1px solid #eaeaea;
 }
-.sp-body .sp-box .nu-reg-box {
-  margin-top: 50px;
+.sp-body .sp-box .sp-nu-reg-box {
+  margin-top: 25px;
   height: 19px;
   width: 454px;
   color: #333;
