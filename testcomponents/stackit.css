@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.below {
+  height: 167px;
+  width: 300px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid red;
+  position: absolute;
+}
+
+.above{
+    content: "";
+    height: 100px;
+    width: 200px;
+    background: #000;
+    position: absolute;
+    bottom: 100px;
+}
