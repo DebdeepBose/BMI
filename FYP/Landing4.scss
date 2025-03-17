@@ -1,0 +1,71 @@
+$lcblue: #4765f8;
+
+.expense-info-box {
+  height: 675px;
+  width: 100%;
+  padding-bottom: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding-right: 88px;
+
+  .ei-img {
+    width: 873.587px;
+    height: 627px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+  }
+
+  .ei-text {
+    width: 490px;
+    height: 627px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 22px;
+
+    .about{
+        font-size: 16px;        
+        font-weight: 400px;
+        color: $lcblue;
+    }
+
+    .ei-big-text {
+      width: 442px;
+      height: 154px;
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 55px;
+    }
+
+    .ei-small-text{
+        width: 442px;
+        height: 159px;
+        color: #999191;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    .ei-button{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 442px;
+
+        .more-btn{
+            height: 50px;
+            width: 220px;
+            background: $lcblue;
+            border: none;
+            outline: none;
+            color: white;
+            border-radius: 4px;
+
+        }
+    }
+  }
+}

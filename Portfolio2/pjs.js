@@ -43,9 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
   elements.forEach((el) => observer.observe(el));
 });
 
-function flip_it(id) {
-  document.getElementById(id).classList.toggle("flip");
-}
+
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -64,5 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", revealOnScroll);
   revealOnScroll(); 
 });
+
 
 
