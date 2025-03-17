@@ -6,6 +6,7 @@
 @use 'Landing6';
 @use 'Landing7';
 @use 'Landing8';
+@use 'LoginPage';
 
 
 * {
@@ -70,6 +71,15 @@ nav {
       color: $lcblue;
       font-size: 14px;
       font-weight: 600;
+      
+      .anchor-login{
+        text-decoration: none;
+        color: $lcblue;
+      }
+
+      .anchor-login:visited{
+        color: $lcblue;
+      }
     }
 
     .nav-signup {
@@ -81,6 +91,7 @@ nav {
       background: $lcblue;
       border: none;
       color: white;
+  
     }
   }
 }
