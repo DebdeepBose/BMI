@@ -1,19 +1,20 @@
+require('dotenv').config()
+
 const express = require("express");
 const app = express();
 
-// Middleware to parse JSON data
-app.use(express.json());
+const port = 4000;
 
-app.get("/", (req, res) => {
-    res.send("Backend is running!");
-});
+app.get('/',(req,res)=>{
+    res.send('Hello World')
+})
 
-// Test API to receive data
-app.post("/test", (req, res) => {
-    console.log(req.body); // Logs the received JSON data
-    res.send({ message: "Data received", data: req.body });
-});
+app.get('/github', (req,res) => {
+    res.send(`<a href="https://github.com/DebdeepBose" target="_blank">Visit My GitHub</a>`);
+})
 
-app.listen(5000, () => {
-    console.log("Server is running on port 5000");
-});
+app.listen(process.env.PORT, () =>{
+    console.log(`Example app listening on port ${port}`);
+    
+})
+
