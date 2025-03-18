@@ -1,14 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-    <h1 class="text-3xl text-blue-500 font-bold underline">
-        Hello world!
-    </h1>
-    
-</body>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="box-border h-full w-full">
+    <div class="w-full bg-emerald-500">
+      <nav class="w-full flex items-center justify-between px-12 py-4">
+        
+        <div></div>
+
+        <div class="relative border-2 border-white p-4 bg-white shadow-md rounded-full">
+          <ul class="relative list-none flex flex-row items-center gap-x-8 text-lg text-black font-medium px-4 py-2">
+            <li class="tab relative w-24 h-10 flex items-center justify-center cursor-pointer transition-all rounded-full">Home</li>
+            <li class="tab relative h-10 flex items-center justify-center cursor-pointer transition-all rounded-full">About Us</li>
+            <li class="tab relative w-24 h-10 flex items-center justify-center cursor-pointer transition-all rounded-full">Dashboard</li>
+            <li class="tab relative w-24 h-10 flex items-center justify-center cursor-pointer transition-all rounded-full">Services</li>
+            <li class="tab relative w-24 h-10 flex items-center justify-center cursor-pointer transition-all rounded-full">Contact</li>
+          </ul>
+          <span class="absolute top-6 left-8 w-30 h-10 bg-gray-200 opacity-30 rounded-full transition-transform duration-200 ease-out glider z-1"></span>
+        </div>
+  
+      </nav>
+    </div>
+  
+    <script>
+      const tabs = document.querySelectorAll(".tab");
+      const glider = document.querySelector(".glider");
+  
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+          glider.style.transform = `translateX(${index * 100}%)`;
+        });
+      });
+    </script>
+  </body>
+  
 </html>
