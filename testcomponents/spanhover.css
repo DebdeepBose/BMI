@@ -1,0 +1,28 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 400px;
+    width: 400px;
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fbf {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    transition: all 0.5s ease-out; 
+
+}
+
+.fbf:hover {
+    background-color: cyan;
+    transition: all 0.01s ease-in; 
+    filter: brightness(1.5);
+}

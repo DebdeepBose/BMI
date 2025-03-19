@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium";
+}
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  flex-direction: column;
+}
+
+nav {
+  height: 90px;
+  width: 100%;
+  background: oklch(0.696 0.17 162.48);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 30px;
+}
+
+.menu {
+  padding: 0.5rem;
+  background-color: #fff;
+  width: 420px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px 0 rgba(#000, 0.075);
+}
+
+.link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 50px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform-origin: center left;
+  transition: width 0.2s ease-in;
+  text-decoration: none;
+  color: inherit;
+  
+  &:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    display: block;
+    border-radius: 25px;
+    width: 100%;
+    height: 70%;
+    top: 7;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+    transform-origin: center right;
+    background-color: #eee;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    width: 130px;
+
+    &:before,
+    .link-title {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+.link-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  flex-shrink: 0;
+  left: 18px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.link-title {
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  transform-origin: center right;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 100%;
+  color: #00bc7d;
+  font-weight: 500;
+}
+
+.pat{
+    margin-left: 25px;
+}
+
+.ser{
+    margin-left: 30px;
+}
