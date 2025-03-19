@@ -1,24 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="../StopwatchProject/stp.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="../StopwatchProject/stp.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-container">
-        <div class="stopwatch-box">
-            <div class="time-box">
-                <h1>00<span>:</span>00<span>:</span>00</h1>
-            </div>
-            <div class="btn-box">
-                <div class="stop-btn"></div>
-                <div class="play-btn"></div>
-                <div class="reset-btn"></div>
-            </div>
+      <div class="stopwatch-box">
+        <div class="time-box">
+          <h1>00<span>:</span>00<span>:</span>00</h1>
         </div>
+        <div class="btn-box">
+          <div class="stop-btn"><button class="reset-btn stop" onclick="stopStopwatch()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="100"
+              height="100"
+            >
+              <defs>
+                <linearGradient
+                  id="gradientId"
+                  x1="0%"
+                  y1="50%"
+                  x2="100%"
+                  y2="50%"
+                >
+                  <stop offset="0%" stop-color="red" />
+                  <stop offset="25%" stop-color="orangered" />
+                  <stop offset="50%" stop-color="rgb(255, 100, 0)" />
+                  <stop offset="75%" stop-color="orange" />
+                  <stop offset="100%" stop-color="yellow" />
+                </linearGradient>
+              </defs>
+              <path d="M6 6h12v12H6z" fill="url(#gradientId)" />
+            </svg>
+        </button>
+          </div>
+          <div class="play-btn" >
+            <svg width="0" height="0" style="position: absolute">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color: red; stop-opacity: 1" />
+                  <stop offset="25%" style="stop-color: orangered; stop-opacity: 1" />
+                  <stop offset="50%" style="stop-color: rgb(255, 100, 0); stop-opacity: 1" />
+                  <stop offset="75%" style="stop-color: orange; stop-opacity: 1" />
+                  <stop offset="100%" style="stop-color: yellow; stop-opacity: 1" />
+                </linearGradient>
+              </defs>
+            </svg>
+          
+            <label class="container">
+              <input type="checkbox" />
+              <svg
+                class="play"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 384 512"
+                
+              >
+                <path
+                  d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                  fill="url(#gradient)"
+                ></path>
+              </svg>
+              <svg
+                class="pause"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"
+                  fill="url(#gradient)"
+                ></path>
+              </svg>
+            </label>
+          </div>
+          
+          <div class="reset-btn-holder">
+            <button class="reset-btn" onclick="resetStopwatch()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="100"
+                height="100"
+              >
+                <defs>
+                  <linearGradient
+                    id="gradientId"
+                    x1="0%"
+                    y1="50%"
+                    x2="100%"
+                    y2="50%"
+                  >
+                    <stop offset="0%" stop-color="red" />
+                    <stop offset="25%" stop-color="orangered" />
+                    <stop offset="50%" stop-color="rgb(255, 100, 0)" />
+                    <stop offset="75%" stop-color="orange" />
+                    <stop offset="100%" stop-color="yellow" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M12 5V2L8 6l4 4V7c3.87 0 7 3.13 7 7s-3.13 7-7 7-7-3.13-7-7h-2c0 4.97 4.03 9 9 9s9-4.03 9-9-4.03-9-9-9z"
+                  fill="url(#gradientId)"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-<script src="stp.js"></script>
+  </body>
+  <script src="stp.js"></script>
 </html>
