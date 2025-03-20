@@ -4,12 +4,13 @@ import ReactDOM from 'react-dom/client';
 // import Pfl from './Portfolio/Portfolio';
 // import Brapp from './Box-rdius/BRad';
 // import Lgc from './LgC/LgC';
-import Pfl from './Portfolio/Portfolio';
+// import Pfl from './Portfolio/Portfolio';
+import MySVGAnimation from './Vivus/v1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <Pfl/>
+   <MySVGAnimation />
   </React.StrictMode>
 
 );

@@ -1,0 +1,28 @@
+body{
+    display: flex; align-items: center; justify-content: center;
+    height: 100vh;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    transition: transform 0.15s ease-in;
+    font-size: large;
+    font-weight:600;
+    transition: background-color 1s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+button:active{
+    transform: scale(0.8);
+}
+
+.bd {
+    transition: background-color 1s ease-in-out;
+}
