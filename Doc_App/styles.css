@@ -36,6 +36,8 @@ nav {
   border-radius: 15px;
   box-shadow: 0 10px 25px 0 rgba(#000, 0.075);
   gap: 5px;
+  margin-left: 800px;
+  user-select: none;
 }
 
 .link {
@@ -120,10 +122,32 @@ nav {
 .ser, .au{
     margin-left: 30px;
     margin-bottom: 5px;
+}.cn{margin-left: 20px;margin-bottom: 5px;}
+
+.webcon-box{
+  height: 50px;
+  width: 100px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 15px;
+  margin-left: 75px;
+  gap: 5px;
+  font-weight: 600;
+  transition: transform 0.2s ease-in-out;
+  user-select: none;
 }
 
-.cn{
-  margin-left: 20px;
-  margin-bottom: 5px;
+.webcon-box:hover{
+ transform: scale(1.05); 
+ user-select: none;
 }
+
+.webcon-box:active{
+  transform: scale(0.95); 
+  user-select: none;
+ }
+
 
