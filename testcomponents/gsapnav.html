@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Animated Navbar</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: black;
+            padding: 15px;
+        }
+        .nav-item {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About</a>
+        <a href="#" class="nav-item">Services</a>
+        <a href="#" class="nav-item">Contact</a>
+    </nav>
+
+    <script>
+        // Step 3: Animate Navbar Items using GSAP
+        gsap.from(".nav-item", {
+            opacity: 0,
+            y: -20,
+            duration: 0.5,
+            stagger: 0.1, // Delay between each item
+            ease: "power2.out"
+        });
+    </script>
+
+</body>
+</html>

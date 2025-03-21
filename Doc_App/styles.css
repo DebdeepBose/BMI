@@ -150,4 +150,94 @@ nav {
   user-select: none;
  }
 
+ @media screen and (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .menu {
+    width: 100%;
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .link {
+    width: 60px;
+    height: 45px;
+  }
+
+  .link:hover {
+    width: 100px;
+  }
+
+  .webcon-box {
+    width: auto;
+    padding: 5px 10px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .link {
+    width: 100%;
+    height: 50px;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .link-icon {
+    position: relative;
+    left: 0;
+    margin-right: 10px;
+  }
+
+  .link-title {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 10px;
+  }
+
+  .menu {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link {
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .webcon-box {
+    width: auto;
+    padding: 5px;
+  }
+}
+
+.aboutusholder{
+  width: 100%;
+  height: 500px;
+
+  .auh{
+    height: inherit;
+    width: inherit;
+  }
+}
 

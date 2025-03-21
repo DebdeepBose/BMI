@@ -1,16 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import BAApp from './P3/BreatheAir';
-// import Pfl from './Portfolio/Portfolio';
-// import Brapp from './Box-rdius/BRad';
-// import Lgc from './LgC/LgC';
-// import Pfl from './Portfolio/Portfolio';
-import MySVGAnimation from './Vivus/v1';
+import WMA from './WasteManagementApp/WMA';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <MySVGAnimation />
+   <WMA />
   </React.StrictMode>
 
 );
