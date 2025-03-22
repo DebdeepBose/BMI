@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import WMA from './WasteManagementApp/WMA';
+import Headi from './chaireact/car';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <WMA />
+   <Headi />
   </React.StrictMode>
 
 );
