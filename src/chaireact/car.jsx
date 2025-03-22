@@ -14,7 +14,7 @@ function Headi() {
 
     return (
         <>
-            <h1 className="bg-red-300">Let's Start React</h1>
+            <h1 className="bg-fuchsia-600">Let's Start React</h1>
             <h2>Current Value is {val}</h2>
             <button onClick={addVal}>Add Value</button>
             <button onClick={delVal}>Delete Value</button>
