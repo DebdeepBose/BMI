@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Headi from './chaireact/car';
-import "../src/chaireact/car.css";
+import BGC from './Bgchanger/bgch';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <Headi />
+   <BGC />
   </React.StrictMode>
 
 );
