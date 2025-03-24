@@ -1,6 +1,6 @@
 import Card from "./Card";
 
-function App(){
+function App1(){
     return (
         <div>
         <Card></Card>
@@ -9,4 +9,4 @@ function App(){
     );
 }
 
-export default App;
+export default App1;

@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import BGC from './Bgchanger/bgch';
+// import App1 from './App';
+import "./Assets/index.css"
+
+import Hook1 from './Hooks1/hook1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <BGC />
+   <Hook1 />
   </React.StrictMode>
 
 );
