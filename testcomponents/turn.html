@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flipbook with Images</title>
+
+  <!-- Include jQuery (required for Turn.js) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Include Turn.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4/turn.min.js"></script>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #222;
+    }
+    
+    /* Flipbook Container */
+    #flipbook {
+      width: 600px;
+      height: 400px;
+    }
+
+    /* Individual pages */
+    #flipbook img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+  <script>
+    $(document).ready(function() {
+      $("#flipbook").turn({
+        width: 600,
+        height: 400,
+        autoCenter: true,
+        duration: 800, /* Smooth flipping */
+        gradients: true,
+        elevation: 50
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Flipbook Container with Image Pages -->
+  <div id="flipbook">
+    <div><img src="img1.jpeg" alt="Page 1"></div>
+    <div><img src="img2.jpeg" alt="Page 2"></div>
+    <div><img src="img3.jpeg" alt="Page 3"></div>
+    <div><img src="ran.jpeg" alt="Page 4"></div>
+  </div>
+
+</body>
+</html>

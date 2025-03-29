@@ -1,6 +1,9 @@
+<html lang="en">
+
 <head>
   <link rel="stylesheet" href="p1.css" />
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -177,52 +180,98 @@
         <h1>My Projects</h1>
       </div>
     
-      <div class="proj-wrapper">lmfao
-      </div>
+      <div class="proj-wrapper">
+        <div class="megabox">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="BMIpic.png" />
+                <div class="imginfo">A Simple BMI Calculator That Takes In Height And Weight And Calculates BMI</div>
+                <button class="vi slideinleft" onclick="window.location.href=' https://debdeepbose.github.io/BMI/';">View</button>
+                <button class="co slideinright" onclick="window.location.href='https://github.com/DebdeepBose/BMI';">Code</button>
 
-    
-    
-
-    <!-- <div id="scroll-contact"></div>
-    <div class="contactbox slideinleft">
-      <div class="contact-heading">Let's Get In Touch!</div>
-      <div class="contact-info">
-        <div class="input-container slideinleft">
-          <img src="name_icon.svg" alt="User Icon">
-          <input type="text" class="name" placeholder="Enter Your Name">
-      </div>
-      
-      <div class="input-container slideinleft">
-          <img src="mail_icon.svg" alt="Email Icon">
-          <input type="text" class="email" placeholder="Enter Your Email Address">
-      </div>
-      
-      <div class="input-container slideinleft">
-          <img src="msg_icon.svg" alt="Message Icon" class="lol">
-          <input type="text" class="msg" placeholder="Enter Your Message">
-      </div>
-      
-        <button class="shoot">
-          <div class="svg-wrapper-1">
-            <div class="svg-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-              >
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path
-                  fill="currentColor"
-                  d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                ></path>
-              </svg>
+              </div>
+              <div class="swiper-slide">
+                <img src="calcfr.png" />
+                <div class="imginfo">A Basic Calculator With A Switch Option For Scientific Mode And Complex Calculations</div>
+                <button class="vi slideinleft" onclick="window.location.href=' https://debdeepbose.github.io/Calculator/';">View</button>
+                <button class="co slideinright" onclick="window.location.href='https://github.com/DebdeepBose/Calculator';">Code</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                <button class="vi slideinleft">View</button>
+                <button class="co slideinright">Code</button>
+                
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                <button class="vi slideinleft">View</button>
+                <button class="co slideinright">Code</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                <button class="vi slideinleft">View</button>
+                <button class="co slideinright">Code</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                <button class="vi slideinleft">View</button>
+                <button class="co slideinright">Code</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                <button class="vi slideinleft">View</button>
+                <button class="co slideinright">Code</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                <button class="vi slideinleft">View</button>
+                <button class="co slideinright">Code</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                <button class="vi slideinleft">View</button>
+                <button class="co slideinright">Code</button>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <span>Send</span>
-        </button>
-    </div>
-  </div> -->
+        </div>
+        
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            initialSlide: Math.floor(document.querySelectorAll('.swiper-slide').length / 2), // Set middle slide as default
+            coverflowEffect: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            },
+          });
+          </script>
+      </div>
+        
+
+     
+
+
+
+    
 </body>
+
 <script src="pjs.js"></script>
 
+</html>
