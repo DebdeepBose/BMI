@@ -30,7 +30,44 @@
     overflow: hidden;
     padding-top: 40px;
     padding-left: 50px;
+  
   }
+
+  .q_abt{
+    height: 60px;
+    width: 90%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .qabtb {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: 3px #00a6ff solid;
+}
+
+
+.qabtb svg {
+    height: 75%; 
+    width: 75%;
+}
+
+.qabtb .lc{
+  height: 68%;
+  width: 68%;
+}
+
+
+
   
   .info h1, .info h3 {
     animation: slideInFromLeft 1s ease-out, gradientFlow 15s linear infinite;
@@ -84,4 +121,13 @@
     .pfpinfobox { flex-direction: column-reverse; align-items: center; }
     .pfp { width: 450px; margin-left: 0; margin-bottom: 20px; }
     .info { width: 100%; }
+  }
+
+  .qabtb:hover{
+    box-shadow: 0 0 12px rgb(0, 166, 255), 0 0 19px rgb(0, 208, 255), 0 0 29px rgba(0, 166, 255, 0.3);
+  }
+
+  .qabtb:active{
+    height: 37px;
+    width: 37px;
   }

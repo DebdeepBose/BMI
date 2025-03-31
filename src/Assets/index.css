@@ -1,24 +1,53 @@
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    height: 100vh;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 100vh;
 }
 
-.pass-text{
-    color: white;
-    font-size: 32px;
-    height: 100px;
-    width: 500px;
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    border: 2px solid slateblue;
+.pass-text {
+  color: white;
+  font-size: 32px;
+  height: 100px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  justify-content: center;
+  border: 2px solid slateblue;
 }
 
-.enterpass{
-    height: 40px;
-    width: 90%;
-    border-radius: 20px;
+.textncopy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.enterpass {
+  height: 38px;
+  width: 300px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  outline: none;
+  border: none;
+  padding-left: 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.copy {
+  height: 40px;
+  width: 100px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: blue;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
 }

@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import App1 from './App';
-import "./Assets/index.css"
+// import "./Assets/index.css"
 
-import Hook1 from './Hooks1/hook1';
+// import Hook1 from './Hooks1/hook1';
+
+import Lp from './LearnProps/lp';
+import "./LearnProps/lp.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <Hook1 />
+   <Lp name="Tom" age={25} isStudent = {true}/>
+   <Lp name="Jerry" age={22} isStudent = {true}/>
+   <Lp name="Bob" age={35} isStudent = {false}/>
   </React.StrictMode>
 
 );
