@@ -18,7 +18,7 @@
 }
 
 nav {
-  height: 80px;
+  height: 70px;
   width: 100%;
   background-color: rgb(51, 51, 51);
   display: flex;
@@ -50,6 +50,7 @@ ul {
 
 .nav-name:hover{
   transform: scale(1.1);
+  color: rgb(64, 207, 255);
 }
 
 .nav-name:active{
@@ -94,7 +95,7 @@ ul {
 }
 
 body {
-  padding-top: 80px; 
+  padding-top: 60px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,7 +105,7 @@ body {
 }
 
 .main-box {
-  height: 3750px;
+  height: 3500px;
   width: 100%;
   background-color: rgb(0, 0, 0);
   display: flex;

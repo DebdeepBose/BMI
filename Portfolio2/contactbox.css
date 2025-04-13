@@ -32,6 +32,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    gap: 15px;
     background: linear-gradient(90deg, white, cyan);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -151,11 +152,11 @@
   }
   
  .shoot:hover svg {
-    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+    transform: translateX(-1.6em) rotate(45deg) scale(1.1);
   }
   
   .shoot:hover span {
-    transform: translateX(5em);
+    transform: translateX(5.5em);
   }
   
  .shoot:active {
