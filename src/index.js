@@ -2,14 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import App1 from './App';
 // import "./Assets/index.css"
-// import Hook1 from './Hooks1/hook1';
-// import Lp from './LearnProps/lp';
-// import "./LearnProps/lp.css";
-import ChatRoom from './hecker/hecker';
+import US1 from './LearnHooks/US1';
+import "./LearnHooks/US1.css";
 
-// import CR from './ConditionalRender/cr';
 
-import RL from './RenderList/RL';
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,7 +23,7 @@ root.render(
   // </React.StrictMode>
 
   <React.StrictMode>
-    <ChatRoom/>
+    <US1/>
   </React.StrictMode>
 
 );
